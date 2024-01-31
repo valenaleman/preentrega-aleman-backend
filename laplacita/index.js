@@ -30,3 +30,11 @@ console.log(values);
 
 const keys = Object.keys(product);
 console.log(keys);
+
+const arr1 = ['Pampers - Premium care, piel delicada', 'Babysec - Ultrasec'];
+const arr2 = ['Pampers - Premium care, recién nacido hipoalergénico'];
+
+const combineArray = [...arr1, ...arr2];
+console.log(combineArray);
+
+console.log(`Orden de productos por precio`);

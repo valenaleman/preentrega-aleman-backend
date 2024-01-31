@@ -86,3 +86,19 @@ const sales = [
     })
     
     console.log('Total de productos vendidos:', totalOfProductsSales);
+
+    const message = "Bienvenido a la pañalera LA PLACITA";
+    const message1 = "Usted esta viendo los productos de la tienda";
+
+    /*console.log(message.replace(/\s/g,"")*/ 
+    console.log(message.trim());
+    console.log(message1.trim());
+
+    const arrayAnidado = [
+        ['Babysec - Ultrasec', 'Pampers - Premium care, piel delicada'],
+        ['Pampers - Premium care, recién nacido hipoalergénico', 'Pampers - Premium care, Recien nacido'],
+        ['Chelino', 'Q-SOFT Premium hipoalergénicas']
+    ]
+
+    console.log(arrayAnidado);
+    console.log(arrayAnidado.flat());

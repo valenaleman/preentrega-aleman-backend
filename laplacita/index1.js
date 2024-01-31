@@ -1,5 +1,3 @@
-
-
 function add(num1,num2,...numbers){
     let total = 0;
     for(const number of numbers){

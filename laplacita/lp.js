@@ -1,7 +1,10 @@
 let product = [
     { id: 1, name: 'Babysec - Ultrasec', price: 3200, content: 60 },
-    { id: 2, name: 'Pampers - Premium care, piel delicada', price: 5900, content: 58},
-    { id: 3, name: 'Pampers - Premium care, recién nacido hipoalergénico', price: 2420, content: 36},
+    { id: 2, name: 'Pampers - Premium care, piel delicada', price: 5900, content: 58 },
+    { id: 3, name: 'Pampers - Premium care, recién nacido hipoalergénico', price: 2420, content: 36 },
+    { id: 4, name: 'Pampers - Premium care, Recien nacido', price: 3200, content: 20 },
+    { id: 5, name: 'Chelino', price: 7600, content: 27 },
+    { id: 6, name: 'Q-SOFT Premium hipoalergénicas', price: 690, content:50 }
 ]
 
 let listproduct = product.find(p=>{
@@ -53,10 +56,16 @@ class Product {
 const product1 = new Product("Babysec - Ultrasec", 3200, 60);
 const product2 = new Product("Pampers - Premium care, piel delicada", 5900, 58);
 const product3 = new Product("Pampers - Premium care, recién nacido hipoalergénico", 2420, 36);
+const product4 = new Product("Pampers - Premium care, Recien nacido", 3200, 20);
+const product5 = new Product("Chelino", 7600, 27);
+const product6 = new Product("Q-SOFT Premium hipoalergénicas", 690, 50);
 
 console.log(product1.getInformation());
 console.log(product2.getInformation());
 console.log(product3.getInformation());
+console.log(product4.getInformation());
+console.log(product5.getInformation());
+console.log(product6.getInformation());
 
 Product.dates();
 

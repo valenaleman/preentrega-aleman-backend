@@ -71,7 +71,7 @@ const sales = [
             if(!typesOfProducts.includes(type)){
                 typesOfProducts.push(type);
             }
-        })
+        });
     });
     
     console.log('Productos:', typesOfProducts);

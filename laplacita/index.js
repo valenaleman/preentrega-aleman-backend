@@ -102,3 +102,17 @@ const sales = [
 
     console.log(arrayAnidado);
     console.log(arrayAnidado.flat());
+
+    const type = "Babysec";
+
+    const typeOfProduct = type ?? "Marca";
+
+    console.log(typeOfProduct);
+
+    const product1  ={
+        nombre: "Ultrasec",
+    }
+
+    const nameOfProduct = product1?.type;
+
+    console.log(nameOfProduct);

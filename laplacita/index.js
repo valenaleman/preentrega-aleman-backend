@@ -1,5 +1,4 @@
-const products = [1, 1, 1]
-;
+const products = [1, 1, 1];
 const stock = products.map(product => product**1);
 
 console.log(stock);
@@ -116,3 +115,47 @@ const sales = [
     const nameOfProduct = product1?.type;
 
     console.log(nameOfProduct);
+
+const resultadoCompra = new Promise((resolve, reject) => {
+    const exito = false; // Cambiar a false para probar el caso de rechazo
+      
+    if (exito) {
+    // Caso de resolución
+    resolve("Resultado");
+    } else {
+    // Caso de rechazo
+    reject("La operación falló");
+    }
+    });
+      
+// Utilizamos la promesa
+resultadoCompra
+    .then((resultado) => {
+         console.log("Este es el resultado de todos los producos:", resultado);
+    })
+    .catch((error) => {
+         console.error("No se puede poner en pantalla el resultado de los productos sumados:", error);
+     });
+
+     const dividir = (dividendo, divisor) => {
+        return new Promise((resolve, reject) => {
+            if (divisor === 0) {
+                // Si el divisor es 0, rechazamos la promesa con un mensaje de error
+                reject('No se pueden hacer divisiones entre cero');
+            } else {
+                // Si el divisor no es 0, resolvemos la promesa con el resultado de la división
+                resolve(dividendo / divisor);
+            }
+        });
+    }
+    
+    // Llamamos a la función dividir con 6 como dividendo y 2 como divisor
+    dividir(6, 2)
+        .then((resultado) => {
+            // El método then se ejecuta cuando la promesa se resuelve con éxito
+            console.log('Resultado:', resultado); // Resultado: 3
+        })
+        .catch((error) => {
+            // El método catch se ejecuta cuando la promesa es rechazada
+            console.error('Error:', error); // No se ejecutará en este caso
+        });

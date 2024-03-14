@@ -1,0 +1,7 @@
+Productos:
+Nombre del producto: Babysec - Ultrasec Precio: 3200 Contenido: 60.
+Nombre del producto: Pampers - Premium care, piel delicada Precio: 5900 Contenido: 58.
+Nombre del producto: Pampers - Premium care, recién nacido hipoalergénico Precio: 2420 Contenido: 36.
+Nombre del Producto: Pampers - Premium care, Recien nacido Precio: 3200 Contenido: 20.
+Nombre del producto: Chelino Precio: 7600 Contenido: 27.
+Nombre del producto: Q-SOFT Premium hipoalergénicas Precio: 690 Contenido:50.

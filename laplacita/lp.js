@@ -102,3 +102,33 @@ console.log(`${counter1.name}: ${counter1.getValue}`);
 console.log(`${counter2.name}: ${counter2.getValue}`);
 
 console.log(`Contador global: ${Counter.counterGlobal}`)
+
+console.log("Inicio de la cuenta");
+
+function procesoSincrono() {
+  for (let i = 0; i < 3200; i++) {
+    console.log(`Primer paso síncrono ${i}`);
+  }
+
+  for (let i = 0; i < 5900; i++) {
+    console.log(`Segundo paso síncrono ${i}`);
+  }
+  for (let i = 0; i < 2420; i++) {
+    console.log(`Tercer paso síncrono ${i}`);
+  }
+
+  for (let i = 0; i < 3200; i++) {
+    console.log(`Cuarto paso síncrono ${i}`);
+  }
+  for (let i = 0; i < 7600; i++) {
+    console.log(`Quinto paso síncrono ${i}`);
+  }
+
+  for (let i = 0; i < 790; i++) {
+    console.log(`Sexto paso síncrono ${i}`);
+  }
+}
+
+procesoSincrono();
+
+console.log("Fin del programa");
